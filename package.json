@@ -1,0 +1,24 @@
+{
+  "name": "onue",
+  "version": "1.0.0",
+  "description": "One Night Ultimate Everything website",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rbrown234/ONUE.git"
+  },
+  "author": "Ron Brown",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rbrown234/ONUE/issues"
+  },
+  "homepage": "https://github.com/Rbrown234/ONUE#readme",
+  "dependencies": {
+    "csv-parse": "^5.5.6",
+    "papaparse": "^5.4.1"
+  }
+}

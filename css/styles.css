@@ -1,0 +1,7 @@
+.role {
+    border: 1px black solid;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 10px;
+    max-width: 10%;
+  }

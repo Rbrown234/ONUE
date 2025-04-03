@@ -1,0 +1,14 @@
+a:hover {
+  background-color: lightgreen;
+}
+
+body {
+  background-color: lightblue;
+}
+
+div.role {
+  border-style: solid;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+}

@@ -36,9 +36,9 @@ console.log(rolesInPlay);
   
 
 function setRoleList() {
-    const roleList = document.getElementById('roles');
+    const roleList = document.getElementById('app');
     for(let i = 0; i < onuwRoles.length; i++){
-        const role = document.createElement('div');
+        const role = document.createElement('button');
         role.setAttribute('class', 'role');
         role.textContent = onuwRoles[i].name;
         roleList.insertAdjacentElement('beforeend', role);

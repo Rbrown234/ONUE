@@ -4,6 +4,10 @@
 
 <script>
 
+const onuwRoles = [{name: "Doppleganger", wakeOrder: 1}, {name: "Werewolf", wakeOrder: 2}, {name: "Werewolf", wakeOrder: 2}, {name: "Minion", wakeOrder: 3},
+    {name: "Mason", wakeOrder: 4}, {name: "Mason", wakeOrder: 4}, {name: "Seer", wakeOrder: 5}, {name: "Robber", wakeOrder: 6}, {name: "Troublemaker", wakeOrder: 7},
+    {name: "Drunk", wakeOrder: 8}, {name: "Insomniac", wakeOrder: 9}, {name: "Villager"}, {name: "Villager"}, {name: "Villager"},
+    {name: "Hunter"}, {name: "Tanner"}];
 export default {
     data(){
         return{
@@ -63,12 +67,18 @@ export default {
   
 
 function setRoleList() {
+    let rolesInPlay = [];
     const roleList = document.getElementById('app');
     for(let i = 0; i < onuwRoles.length; i++){
         const role = document.createElement('div');
         role.setAttribute('class', 'role');
         role.textContent = onuwRoles[i].name;
+        role.onclick = () => {
+            rolesInPlay.push(role.textContent)
+            console.log(rolesInPlay);
+        };
         roleList.insertAdjacentElement('beforeend', role);
+        
         
     }
     

@@ -1,14 +1,15 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-import Werewolf from './components/Werewolf.vue'
+
 </script>
 
 <template>
+  <h1>Welcome to One Night Ultimate Everything!</h1>
   <div id="nav">
-    
+    <router-link v-bind:to="{name: 'onuw'}">Home</router-link>
   </div>
-  <Werewolf />
+  <router-view />
+  
 </template>
 
 <style scoped>

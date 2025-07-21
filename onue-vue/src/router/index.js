@@ -1,13 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import RoundStartView from '@/views/RoundStartView.vue'
+import WerewolfView from '@/views/WerewolfView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: ONUWView,
+      name: 'onuw',
+      component: WerewolfView,
     },
     {
       path: '/about',
@@ -17,6 +19,11 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue'),
     },
+    {
+      path: '/roundstart',
+      name: 'roundstart',
+      component: RoundStartView,
+    }
   ],
 })
 
